@@ -50,6 +50,8 @@ const taskSchema = new Schema<ITask>({
 
 });
 
+
+
 taskSchema.index({ userId: 1, dueDate: 1 });
 
 export const Task = model<ITask>("Task", taskSchema);
