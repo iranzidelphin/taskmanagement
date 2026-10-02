@@ -1,5 +1,6 @@
 import type { NextFunction, Request, Response } from "express";
 
+
 const authMiddleware = (
   req: Request,
   res: Response,
@@ -7,5 +8,6 @@ const authMiddleware = (
 ): void => {
   next();
 };
+
 
 export default authMiddleware;

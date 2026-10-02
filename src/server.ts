@@ -13,7 +13,7 @@ const PORT = process.env.PORT ||2000;
 const startServer = async () :Promise<void> => {
     try {
         await connectDB();
-
+                
         app.listen(PORT, ()=>{
             console.log(`Server is running on port ${PORT}`);
         });
